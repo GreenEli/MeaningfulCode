@@ -1,39 +1,39 @@
 # MeaningfulCode
 
-最近又折腾了一下我的古董级电脑，偶然找到大一暑假时写的代码，本着无聊的心态跑一下，发现还挺有意思的，虽然程序设计比较稚嫩，但由于毕竟是我第一个写出来的还有点样子的千行代码，还挺有纪念意义的，于是决定把它放在我的github仓库中生灰。
-## 起因：
-大一下学期刚刚学完C语言，然后我们有一个课程设计的任务，就是一个小组利用这学期学完的C语言课程写一个像点样的东西出来。由于我的室友们似乎都对编程都不大感兴趣，所以我就担负了这重中之重的攻坚任务。
-## 经过
-当时正值放暑假，我决定好好利用这个假期把这个东西搞出来，首先是整体的程序框架设计，当时设计的是图书管理系统模型，代码写完后，为防止与其他小组做的重复，果断将图书馆里系统改成银行借贷系统（这个比较快，只需要改变一下代码的逻辑规则即可），所以可以看到我上传的代码注释还是图书馆里系统的注释（当时懒得改注释）。银行借贷系统的程序总体框架设计如下所示：
+I tossed about my antique computer again recently, I found the code written during the summer vacation of my freshman year by chancea, and I ran it with a boring mentality and found that it was quite interesting. Although the program design is relatively immature, it is because it was my first project to write. The thousands of lines of code that came out are quite commemorative, so I decided to put it in my github warehouse to make dust.
+## Cause:
+The next semester has just finished learning the C language, and then we have a curriculum design task, that is, a group uses the C language course completed this semester to write a decent thing, since none of my roommates seem to be very interested in programming, I took on the most important task.
+## process
+It was the summer vacation. I decided to make good use of this holiday. First of all, the overall program framework design, at that time, I designed the library management system model, after the code was written, I was decisive in order to prevent duplication with other groups, change the system in the library to a bank loan system (this is faster, only need to change the logic rules of the code), so you can see that the code comments I uploaded are still the comments of the system in the library (I was too lazy to change the comments at the time). The overall program framework design of the bank lending system is as follows:
 ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/0.png)
 
-接下来就对代码上的功能点进行程序化实现，我现在仍旧记得，程序实现的过程并不顺利，值得注意的是当时我把所有的近千行代码都写在一个c语言文件里，（现在看看当时的举动，在近千行代码里排很多预想不到的bug，想想真是头皮发麻），然而当时我凭着极其的耐性慢慢在千行代码里排bug，终于一个还看得过去的银行借贷系统做完了。
-## 简单使用说明：
-代码是采用纯C语言实现的，所以大家只需要将本项目代码clone下来，然后用C计编辑器打开bank.c文件即可，其中登录名和密码在9_6.txt文件中，9_7.txt存放的是银行的借贷产品，9_8.txt存放的是银行的用户借贷记录，9_10.txt存放的是文艺游戏词语接龙文本库。
-运行过程如下：
-1.	运行bank.c
+Next, the function points on the code will be implemented programmatically. I still remember that the process of program implementation was not smooth, it is worth noting that I wrote all nearly a thousand lines of code in a C language file at that time, ( Now let’s look at the actions at that time, there are many unexpected bugs in nearly a thousand lines of code, thinking about it, my scalp is numb.) however, with extreme patience, I slowly sorted out the bugs in the thousand lines of code. The bank lending system that has to be done is finished.
+## Simple instructions:
+The code is implemented in pure C language, so you only need to clone the project code, and then open the bank.c file with the C meter editor, where the login name and password are in the 9_6.txt file, and 9_7.txt is stored a loan product of the bank, 9_8.txt stores the bank's user loan records, and 9_10.txt stores the literary game word solitaire text library.
+The operation process is as follows:
+1.	run bank.c
 
 ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/1.png)
 
-2.	输入密码和用户名
+2. Enter password and username
 
 ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/2.png)
  
-3.	试试不同选项产生的结果
+3. Try the results of different options
    
  ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/3-1.png)
  ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/3-2.png)
  ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/3-3.png)
  ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/3-4.png)
 
-4.	用户管理界面相关选项
+4. User management interface related options
 
 ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/4.png)
 
-5.	个人感觉里面的逻辑游戏设计的还有点意思，可以通过改动过代码设计不同的计算难度，小学生可以进行双位数运算、初高中可以调节到五位数或者更高位数之间的运算。且计算中嵌套计算（每正确计算出一个答案，系统会自动分配一个加时或减时的时间操作，最终把这种奖惩时间算上得到一个综合时间，最后给出一个最终时间），我记得当时我给我正在读小学和初中的三个弟妹玩这个，他们都玩的不错，上面还有他们的统计记录
+5. I personally feel that the logic game design inside is a bit interesting, you can design different calculation difficulties by changing the code, elementary school students can perform double-digit calculations, and middle and high school can adjust to five-digit or higher calculations, and the calculation is nested in the calculation (every time an answer is correctly calculated, the system will automatically assign an additional time or subtract time operation, and finally this reward and punishment time is counted as a comprehensive time, and finally a final time is given), I remember that I played this with my three younger siblings who were in elementary school and junior high school, they all played well, and there are their statistical records on it.
 
 ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/5.png)
 
-6.	文艺游戏也不错，可以巩固小朋友的语文古诗词能力，但需要自己在9_10.txt文件中添加自己的古诗词文本库。
+6. The literary game is also good, it can consolidate the children's ability of ancient Chinese poetry, but you need to add your own ancient poetry text library in the 9_10.txt file.
  
 ![image](https://github.com/GreenEli/MeaningfulCode/blob/main/Pic/6.png)
